@@ -16,15 +16,5 @@ alias q='exit'
 #Variables
 alias null='/dev/null'
 
-#Git
-alias init='git init; touch "README.md"; touch ".gitignore"; git add *; git commit -m "init :tada:"'
-alias gita='git add .'
-alias gitc='git commit'
-alias gith='git log --oneline'
-alias gitl='git branch --list'
-alias gitp='git push'
-alias gits='git status'
-alias gity='git pull'
-
-#Common Files
+#Personal log file
 alias log='vim ~/Documents/logs/log.txt'

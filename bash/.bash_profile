@@ -5,9 +5,9 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-# Friendly directory listing
+# Friendly directory change with listing
 c() {
-        cd "$1" && ls -d */;
+        cd "$1" && ls --color;
 }
 
 # User specific environment and startup programs
