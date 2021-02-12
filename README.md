@@ -1,4 +1,4 @@
-#Adam Peterson's Dotfiles
+# Adam Peterson's Dotfiles
 
 This is a repository for my common dotfiles that I like to have across different
 machines. I use [GNU Stow](https://www.gnu.org/software/stow/) to system link
