@@ -12,11 +12,7 @@ then
 fi
 export PATH
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
 # Set the PS1 prompt (with colors).
-# PS1="[\u@\h \W]$ "
 PS1="\[\033[0;34m\][\u@\h \W]\\$ \[$(tput sgr0)\]"
 
 # Set the default editor to vim.
@@ -33,8 +29,14 @@ shopt -s histappend
 # instead of after closing the session.
 PROMPT_COMMAND='history -a'
 
-# User specific aliases and functions
+# User specific aliases
 if [ -f $HOME/.bash_aliases ]
 then
   . $HOME/.bash_aliases
+fi
+
+#User specific functions
+if [ -f $HOME/.bash_functions ]
+then
+  . $HOME/.bash_functions
 fi

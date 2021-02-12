@@ -1,7 +1,32 @@
-[user]
-	email = mail@adamjp.com
-	name = Adam Peterson
+[alias]
+  br = branch
+  ch = checkout
+  chb = checkout -b
+  f = fetch
+  last = "show --stat"
+  hist = "log --oneline -n 12"
+  s = status
+  root = "rev-parse --show-toplevel"
+[commit]
+  template = ~/.gitmessage
 [core]
-	editor = vim
+  editor = vim
+  excludesfile = ~/.gitignore
+[diff]
+  colorMoved = zebra
+  colorMovedWS = ignore-space-change
+  tool = vimdiff
+[log]
+  date = relative
+  decorate = auto
+[merge]
+  commit = no
+  defaultToUpstream = true
 [pull]
-	rebase = false
+  rebase = false
+[push]
+  default = current
+  followTags = true
+[user]
+  email = ajay2828@gmail.com
+  name = Adam Peterson
