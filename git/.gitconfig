@@ -1,0 +1,7 @@
+[user]
+	email = mail@adamjp.com
+	name = Adam Peterson
+[core]
+	editor = vim
+[pull]
+	rebase = false
