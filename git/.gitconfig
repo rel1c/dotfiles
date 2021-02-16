@@ -1,7 +1,27 @@
+[alias]
+        br = branch
+        co = commit
+        ch = checkout
+        chb = checkout -b
+        dif = diff HEAD
+        f = fetch
+        m = merge
+        p = pull
+	s = status
+[core]
+	editor = vim
+[diff]
+	colorMoved = zebra
+	colorMovedWS = ignore-space-change
+[log]
+        date = relative
+        decorate = auto
+[merge]
+	defaultToUpstream = true
+[pull]
+	rebase = false
+[push]
+	default = current
 [user]
 	email = mail@adamjp.com
 	name = Adam Peterson
-[core]
-	editor = vim
-[pull]
-	rebase = false
