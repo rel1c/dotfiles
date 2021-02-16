@@ -49,6 +49,9 @@ nnoremap k gk
 " more convenient leader key
 let mapleader = ","
 
+" insert date and time
+nnoremap <Leader>d :r !date<CR>
+
 " switch buffers easily
 nnoremap <Tab> :bnext<cr>
 nnoremap <S-Tab> :bprevious<cr>
