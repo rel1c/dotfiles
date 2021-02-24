@@ -30,6 +30,18 @@ set splitright
 set textwidth=120
 set wildmenu
 
+" default indent is 2 spaces
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+
+" for python, 4 spaces
+autocmd Filetype python setlocal ts=4 sw=4 expandtab
+
+" for C/C++, 4 spaces
+autocmd Filetype cpp setlocal ts=4 sw=4 expandtab
+autocmd Filetype c setlocal ts=4 sw=4 expandtab
+
 " miscellaneous
 set nocompatible
 set undolevels=1000
