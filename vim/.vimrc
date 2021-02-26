@@ -30,6 +30,11 @@ set splitright
 set textwidth=120
 set wildmenu
 
+" folding behavior
+set foldmethod=syntax
+set foldnestmax=1
+set foldlevelstart=1
+
 " default indent is 2 spaces
 set shiftwidth=2
 set softtabstop=2
