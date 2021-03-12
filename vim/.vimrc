@@ -15,6 +15,7 @@ syntax on
 " user interface
 set autoindent
 set backspace=indent,eol,start
+set clipboard=unnamed
 set cmdheight=2
 set expandtab
 set hidden
@@ -32,8 +33,8 @@ set wildmenu
 
 " folding behavior
 set foldmethod=syntax
-set foldnestmax=1
-set foldlevelstart=1
+set foldnestmax=5
+set foldlevelstart=5
 
 " default indent is 2 spaces
 set shiftwidth=2
