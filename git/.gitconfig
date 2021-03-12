@@ -19,7 +19,9 @@
         date = relative
         decorate = auto
 [merge]
+  commit = no
 	defaultToUpstream = true
+  ff = no
 [pull]
 	rebase = false
 [push]
