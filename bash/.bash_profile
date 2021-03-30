@@ -9,5 +9,3 @@ fi
 c() {
         cd "$1" && ls --color;
 }
-
-# User specific environment and startup programs
