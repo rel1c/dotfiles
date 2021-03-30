@@ -5,10 +5,10 @@
   chb = checkout -b
   dif = diff HEAD
   f = fetch
-  file = commit -eF .gitcommit
   m = merge
   p = pull
 	s = status
+  root = "rev-parse --show-toplevel"
 [commit]
   template = ~/.gitmessage
 [core]
