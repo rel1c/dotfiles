@@ -12,6 +12,7 @@
   template = ~/.gitmessage
 [core]
 	editor = vim
+  excludesfile = ~/.gitignore
 [diff]
 	colorMoved = zebra
 	colorMovedWS = ignore-space-change
