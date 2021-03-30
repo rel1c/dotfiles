@@ -16,6 +16,7 @@
 [diff]
 	colorMoved = zebra
 	colorMovedWS = ignore-space-change
+  tool = vimdiff
 [log]
   date = relative
   decorate = auto
