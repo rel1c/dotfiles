@@ -12,11 +12,7 @@ then
 fi
 export PATH
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
 # Set the PS1 prompt (with colors).
-# PS1="[\u@\h \W]$ "
 PS1="\[\033[0;34m\][\u@\h \W]\\$ \[$(tput sgr0)\]"
 
 # Set the default editor to vim.

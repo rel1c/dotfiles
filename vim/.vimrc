@@ -19,6 +19,8 @@ set clipboard=unnamed
 set cmdheight=2
 set expandtab
 set hidden
+set history=50
+set linebreak
 set laststatus=2
 set mouse=a
 set number
@@ -28,8 +30,20 @@ set smarttab
 set smartindent
 set splitbelow
 set splitright
-set textwidth=120
 set wildmenu
+set wrap
+
+" highlight past text width
+highlight OverLength ctermbg=7 ctermfg=NONE
+match OverLength /\%>100v.\+/
+
+" netrw specific
+let g:netrw_banner = 0
+
+" nice wrapping of lines
+if exists('+breakindent')
+  set breakindent showbreak=\ +
+endif
 
 " folding behavior
 set foldmethod=syntax
@@ -44,9 +58,9 @@ set tabstop=2
 " for python, 4 spaces
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
 
-" for C/C++, 4 spaces
-autocmd Filetype cpp setlocal ts=4 sw=4 expandtab
-autocmd Filetype c setlocal ts=4 sw=4 expandtab
+" for C/C++, 2 spaces
+autocmd Filetype cpp setlocal ts=2 sw=2 expandtab
+autocmd Filetype c setlocal ts=2 sw=2 expandtab
 
 " gitcommit specific rules
 autocmd Filetype gitcommit setlocal spell textwidth=72
@@ -55,8 +69,14 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 set nocompatible
 set undolevels=1000
 
-"strip comment leader when joining lines
+" strip comment leader when joining lines
 set fo+=j
+
+" italic comments
+highlight Comment cterm=italic
+
+" turn off C highlighting of numbers and strings in comments
+unlet c_comment_strings
 
 " search
 set incsearch
