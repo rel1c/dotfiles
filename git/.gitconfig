@@ -1,12 +1,12 @@
 [alias]
-        br = branch
-        co = commit
-        ch = checkout
-        chb = checkout -b
-        dif = diff HEAD
-        f = fetch
-        m = merge
-        p = pull
+  br = branch
+  co = commit
+  ch = checkout
+  chb = checkout -b
+  dif = diff HEAD
+  f = fetch
+  m = merge
+  p = pull
 	s = status
 [commit]
   template = ~/.gitmessage
@@ -16,8 +16,8 @@
 	colorMoved = zebra
 	colorMovedWS = ignore-space-change
 [log]
-        date = relative
-        decorate = auto
+  date = relative
+  decorate = auto
 [merge]
   commit = no
 	defaultToUpstream = true
