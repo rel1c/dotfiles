@@ -65,6 +65,9 @@ autocmd Filetype c setlocal ts=2 sw=2 expandtab
 " gitcommit specific rules
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
+" markdown specific rules
+autocmd Filetype markdown setlocal spell textwidth=100
+
 " miscellaneous
 set nocompatible
 set undolevels=1000
