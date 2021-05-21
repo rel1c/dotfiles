@@ -33,6 +33,9 @@ set splitright
 set wildmenu
 set wrap
 
+" show hidden characters
+set listchars=tab:..,trail:$,extends:>,precedes:<,nbsp:~
+
 " highlight past text width
 highlight OverLength ctermbg=7 ctermfg=NONE
 match OverLength /\%>100v.\+/
